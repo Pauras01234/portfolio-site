@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pauras Raut | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,22 +19,21 @@
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#internships">Internships</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#activities">Activities</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button id="theme-toggle">🌙</button>
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero -->
   <section class="hero" id="hero">
-    <video autoplay muted loop playsinline id="bg-video">
-      <source src="https://cdn.coverr.co/videos/coverr-futuristic-data-flow-abstract-technology-9776/1080p.mp4" type="video/mp4" />
-    </video>
     <div class="overlay">
-      <h1 data-aos="fade-up">Hi, I'm <span>Pauras Raut</span></h1>
-      <p data-aos="fade-up" data-aos-delay="200">Machine Learning | Data Science | AI</p>
-      <a href="#projects" class="btn-primary" data-aos="fade-up" data-aos-delay="400">View My Work</a>
+      <h1 data-aos="zoom-in">Hi 👋 I'm <span>Pauras Raut</span></h1>
+      <p data-aos="fade-up">Machine Learning | Data Science | AI</p>
+      <div class="scroll-down" data-aos="fade-up">⬇ Scroll</div>
     </div>
   </section>
 
@@ -42,11 +41,58 @@
   <section class="about" id="about" data-aos="fade-right">
     <h2>About Me</h2>
     <p>
-      I'm a data-driven problem solver passionate about transforming raw data into actionable intelligence. 
-      With a Master’s in <b>Genomic Data Science</b> from the University of Galway, I specialize in 
-      <b>Machine Learning</b>, <b>AI Systems</b>, and <b>Data Engineering</b>. My work blends analytics, 
-      creativity, and impact — bridging technical depth with practical outcomes.
+      I am a driven and adaptable professional specializing in Machine Learning, Data Science, and Artificial Intelligence.  
+      I have completed my Master’s in Genomic Data Science at the National University of Galway, Ireland, where I developed expertise in advanced analytics, statistical modeling, and AI-driven problem solving.
     </p>
+    <p>
+      My background combines strong technical skills with practical experience in applying data-driven solutions across domains such as healthcare, finance, and technology.  
+      I bring a results-oriented approach, adaptability, and the ability to turn complex challenges into measurable outcomes.
+    </p>
+  </section>
+
+  <!-- Education -->
+  <section class="education" id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <div class="timeline">
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h3>🎓 Master’s in Genomic Data Science</h3>
+          <p><b>National University of Ireland, Galway</b> | 2024 – 2025</p>
+          <p><b>Grade:</b> Upper Second Class Honours (2:1)</p>
+          <p>
+            Specialized in <b>Machine Learning, Bioinformatics, and AI-driven data analysis</b>.  
+            Completed advanced projects in genomic data, mutational signatures, and applied ML for healthcare.  
+            Successfully defended my Master’s thesis and graduated in 2025.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-content">
+          <h3>🎓 Bachelor of Science in Information Technology</h3>
+          <p><b>University of Mumbai</b> | 2020 – 2024</p>
+          <p><b>Grade:</b> 8.5 CGPA</p>
+          <p>
+            Built a strong foundation in <b>programming, databases, and applied mathematics</b>.  
+            Engaged in projects across machine learning, software development, and system design, preparing me for advanced studies in data science.
+          </p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-content">
+          <h3>🏫 Higher Secondary Education (12th Grade)</h3>
+          <p><b>Tarapur Vidya Mandir</b> | 2018 – 2020</p>
+          <p><b>Grade:</b> 86%</p>
+          <p>
+            Focused on <b>Mathematics and Science</b>, which laid the foundation for pursuing an undergraduate degree in IT.  
+            Developed problem-solving and analytical thinking skills early on.
+          </p>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- Projects -->
@@ -55,91 +101,149 @@
     <div class="grid">
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1603277449669-2f4e78f56e9b?auto=format&fit=crop&w=800&q=80" alt="FootballTalks Project">
-        <h3>⚽ FootballTalks – AI Score Predictor</h3>
+        <img src="https://picsum.photos/600/300?random=1" alt="Chatbot Project">
+        <h3>🤖 Chatbot for Genomic Data</h3>
         <p>
-          Predicts football match outcomes using <b>climate</b> and <b>past match data</b> via Python-based 
-          ML algorithms. Delivers real-time insights using structured APIs.
+          Developed an intelligent chatbot during my Master’s that integrates with <b>cBioPortal</b>, a widely used cancer genomics platform.  
+          Using <b>Large Language Models (LLMs)</b>, the chatbot simplifies complex genomics queries, allowing researchers and clinicians to explore cancer data in natural language.  
+          This project bridges the gap between AI and healthcare, making cancer research data more accessible and actionable.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="TravelPia Project">
-        <h3>🧭 TravelPia – AI Travel Assistant</h3>
+        <img src="https://picsum.photos/600/300?random=2" alt="Brain Tumor Project">
+        <h3>🧠 Brain Tumor Detection</h3>
         <p>
-          RAG-based travel companion generating smart itineraries for every county in Ireland. 
-          Uses <b>LangChain</b>, <b>GPT4All</b>, and <b>Vector Databases</b> to deliver personalized recommendations.
+          Built ML models using <b>SVM</b> and Logistic Regression to classify brain tumor presence from over 5,000 MRI scans.  
+          Achieved <b>95% accuracy</b> with preprocessing, feature extraction, and cross-validation.  
+          Demonstrated ML’s potential in healthcare diagnostics and reliability in decision-making.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1665686309853-4a3f8cf86a32?auto=format&fit=crop&w=800&q=80" alt="Instructify Project">
-        <h3>🤖 Instructify – HR Automation Chatbot</h3>
+        <img src="https://picsum.photos/600/300?random=3" alt="Mental Health Project">
+        <h3>💻 Mental Health Analysis</h3>
         <p>
-          Automates <b>HR and EHS</b> operations through AI chat pipelines. 
-          Designed to handle employee queries and policy FAQs with contextual NLP.
+          Designed a system that integrates <b>OpenAI API</b> with ML models to assess depression severity using survey data and diary entries.  
+          Classified users into different risk categories and recommended personalized support strategies.  
+          Aimed at early detection to promote proactive mental health awareness and care.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1581093448798-5d31cb9a4f85?auto=format&fit=crop&w=800&q=80" alt="cBioPortal Project">
-        <h3>🧬 cBioPortal LLM Chatbot</h3>
-        <p>
-          Large Language Model integrated with <b>cBioPortal</b> for exploring LUAD mutation data. 
-          Bridges genomic datasets with conversational AI for accessible research.
-        </p>
-      </div>
-
-      <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Customer Churn Project">
-        <h3>📊 Customer Churn Prediction</h3>
-        <p>
-          Interactive <b>Streamlit dashboard</b> for visualizing churn probability. 
-          Combines preprocessing, model training, and performance visualization.
-        </p>
-      </div>
-
-      <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1635776064969-8d2d7f96ff4c?auto=format&fit=crop&w=800&q=80" alt="Breast Cancer Project">
+        <img src="https://picsum.photos/600/300?random=4" alt="Breast Cancer Project">
         <h3>🎗️ Breast Cancer Detection</h3>
         <p>
-          Predictive ML model using logistic regression to classify cancer stages with 
-          >90% accuracy. Applied normalization and cross-validation.
+          Implemented Logistic Regression to detect breast cancer based on clinical datasets.  
+          Reached <b>90% accuracy</b> with preprocessing, normalization, and validation techniques.  
+          Highlighted the role of predictive analytics in healthcare for early detection.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1582719471137-c3967ffb1c2d?auto=format&fit=crop&w=800&q=80" alt="Heart Disease Project">
-        <h3>❤️ Heart Disease Prediction</h3>
+        <img src="https://picsum.photos/600/300?random=5" alt="Stock Analysis Project">
+        <h3>📊 Bank Stock Analysis</h3>
         <p>
-          Predicts heart disease risk using <b>logistic regression</b> on clinical datasets. 
-          Helps enable early detection through data-driven insights.
+          Performed time-series analysis of <b>Bank of America</b> stock data over 5 years using Python (yfinance).  
+          Applied <b>technical indicators</b> and built Matplotlib visualizations to identify market trends and stock volatility.  
+          Delivered insights to support investment strategies.
         </p>
       </div>
 
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer" data-aos="fade-up">
-    <div class="footer-content">
-      <p>© 2025 <b>Pauras Raut</b> — Exploring AI, Data & Design</p>
-      <div class="footer-links">
-        <a href="https://github.com/Pauras01234" target="_blank">GitHub</a>
-        <a href="mailto:rautpauras000@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/pauras-raut-369a511aa/" target="_blank">LinkedIn</a>
+  <!-- Internships -->
+  <section class="internships" id="internships" data-aos="fade-left">
+    <h2>Internships</h2>
+    <div class="intern-card" data-aos="zoom-in">
+      <h3>Adani Power | ML Engineer Intern</h3>
+      <p>
+        ▪ Developed dashboards and automated reporting systems to optimize workflows.  
+        ▪ Applied the <b>Eclat algorithm</b> on 7,500+ transactions to identify frequently bought product sets.  
+        ▪ Leveraged Python libraries (Pandas, NumPy, Matplotlib) to provide data-driven insights.
+      </p>
+    </div>
+
+    <div class="intern-card" data-aos="zoom-in">
+      <h3>Tata Steel | Data Analyst Intern</h3>
+      <p>
+        ▪ Conducted data analysis on manufacturing datasets to improve production efficiency.  
+        ▪ Built predictive models to forecast equipment maintenance needs.  
+        ▪ Presented actionable insights to optimize supply chain operations.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <h2 data-aos="fade-up">Skills</h2>
+    <div class="skills-grid">
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/><p>Python</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"/><p>TensorFlow</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"/><p>Pandas</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"/><p>NumPy</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"/><p>SQL</p></div>
+      <div><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/><p>GitHub</p></div>
+    </div>
+  </section>
+
+  <!-- Activities -->
+  <section class="activities" id="activities" data-aos="fade-up">
+    <h2>Extracurricular Activities</h2>
+    <div class="activities-grid">
+      <div class="activity-card" data-aos="zoom-in">
+        <h3>🍳 Part-Time Chef</h3>
+        <p>
+          Currently working as a part-time chef, where I thrive in high-pressure environments and collaborate with a fast-paced team.  
+          This role sharpened my <b>discipline, multitasking, and problem-solving</b> skills.
+        </p>
+      </div>
+      <div class="activity-card" data-aos="zoom-in">
+        <h3>🎭 Cultural & Team Activities</h3>
+        <p>
+          Actively involved in student-led clubs and cultural programs.  
+          These experiences strengthened my <b>leadership, creativity, and teamwork</b>.
+        </p>
+      </div>
+      <div class="activity-card" data-aos="zoom-in">
+        <h3>⚽ Sports & Fitness</h3>
+        <p>
+          Passionate about football and cricket — activities that taught me <b>resilience, focus, and collaboration</b>.  
+          Regular participation helps me build perseverance and a growth mindset.
+        </p>
       </div>
     </div>
-  </footer>
+  </section>
 
+  <!-- Contact -->
+  <section class="contact" id="contact" data-aos="zoom-in">
+    <h2>Get in Touch</h2>
+    <div class="links">
+      <a href="mailto:rautpauras000@gmail.com">📧 Email</a>
+      <a href="https://www.linkedin.com/in/pauras-raut-369a511aa/" target="_blank">🔗 LinkedIn</a>
+      <a href="https://github.com/PaurasR" target="_blank">🐙 GitHub</a>
+    </div>
+  </section>
+
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1000, once: true });
-    document.getElementById("theme-toggle").addEventListener("click", () => {
+    AOS.init({ duration: 1200, once: true });
+    const toggleBtn = document.getElementById("theme-toggle");
+    toggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
+      toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
     });
-    document.getElementById("hamburger").addEventListener("click", () => {
-      document.getElementById("nav-links").classList.toggle("active");
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("nav-links");
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
     });
   </script>
 </body>
