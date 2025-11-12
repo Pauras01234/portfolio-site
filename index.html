@@ -1,23 +1,35 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pauras Raut | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    /* ✨ Extra fade animation for project cards */
+    .card {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.6s ease;
+    }
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+  </style>
 </head>
 <body>
-
   <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">PR<span>.</span></div>
-
-      <!-- Hamburger -->
       <div class="hamburger" id="hamburger">☰</div>
-
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -27,7 +39,6 @@
         <li><a href="#activities">Activities</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-
       <button id="theme-toggle">🌙</button>
     </nav>
   </header>
@@ -45,12 +56,17 @@
   <section class="about" id="about" data-aos="fade-right">
     <h2>About Me</h2>
     <p>
-      I am a driven and adaptable professional specializing in Machine Learning, Data Science, and Artificial Intelligence.  
-      I have completed my Master’s in Genomic Data Science at the National University of Galway, Ireland, where I developed expertise in advanced analytics, statistical modeling, and AI-driven problem solving.
+      I am a driven and adaptable professional specializing in Machine Learning,
+      Data Science, and Artificial Intelligence. I have completed my Master’s
+      in Genomic Data Science at the National University of Galway, Ireland,
+      where I developed expertise in advanced analytics, statistical modeling,
+      and AI-driven problem solving.
     </p>
     <p>
-      My background combines strong technical skills with practical experience in applying data-driven solutions across domains such as healthcare, finance, and technology.  
-      I bring a results-oriented approach, adaptability, and the ability to turn complex challenges into measurable outcomes.
+      My background combines strong technical skills with practical experience
+      in applying data-driven solutions across domains such as healthcare,
+      finance, and technology. I bring a results-oriented approach, adaptability,
+      and the ability to turn complex challenges into measurable outcomes.
     </p>
   </section>
 
@@ -65,9 +81,9 @@
           <p><b>National University of Ireland, Galway</b> | 2024 – 2025</p>
           <p><b>Grade:</b> Upper Second Class Honours (2:1)</p>
           <p>
-            Specialized in <b>Machine Learning, Bioinformatics, and AI-driven data analysis</b>.  
-            Completed advanced projects in genomic data, mutational signatures, and applied ML for healthcare.  
-            Successfully defended my Master’s thesis and graduated in 2025.
+            Specialized in <b>Machine Learning, Bioinformatics, and AI-driven data analysis</b>.
+            Completed advanced projects in genomic data, mutational signatures,
+            and applied ML for healthcare.
           </p>
         </div>
       </div>
@@ -78,8 +94,8 @@
           <p><b>University of Mumbai</b> | 2020 – 2024</p>
           <p><b>Grade:</b> 8.5 CGPA</p>
           <p>
-            Built a strong foundation in <b>programming, databases, and applied mathematics</b>.  
-            Engaged in projects across machine learning, software development, and system design, preparing me for advanced studies in data science.
+            Built a strong foundation in <b>programming, databases, and applied mathematics</b>.
+            Engaged in projects across machine learning and software development.
           </p>
         </div>
       </div>
@@ -89,13 +105,8 @@
           <h3>🏫 Higher Secondary Education (12th Grade)</h3>
           <p><b>Tarapur Vidya Mandir</b> | 2018 – 2020</p>
           <p><b>Grade:</b> 86%</p>
-          <p>
-            Focused on <b>Mathematics and Science</b>, which laid the foundation for pursuing an undergraduate degree in IT.  
-            Developed problem-solving and analytical thinking skills early on.
-          </p>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -104,13 +115,38 @@
     <h2 data-aos="fade-up">Projects</h2>
     <div class="grid">
 
+      <!-- FootballTalks -->
+      <div class="card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=800&q=60" alt="FootballTalks Project">
+        <h3>⚽ FootballTalks – AI Score Predictor</h3>
+        <p>
+          AI-based football analytics platform that predicts match outcomes using
+          <b>climate data</b> and <b>past performance records</b>. Built with Python
+          and integrated APIs for real-time weather and stats. 
+          Designed to showcase AI’s role in sports forecasting.
+        </p>
+      </div>
+
+      <!-- TravelPia -->
+      <div class="card" data-aos="fade-up">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60" alt="TravelPia Project">
+        <h3>🧭 TravelPia – AI Travel Assistant</h3>
+        <p>
+          Smart AI travel planner that uses <b>Retrieval-Augmented Generation (RAG)</b>
+          to generate travel guides for every county in Ireland. 
+          Integrated with LangChain, GPT4All, and vector databases 
+          to deliver personalized itineraries and insights.
+        </p>
+      </div>
+
+      <!-- Original 5 -->
       <div class="card" data-aos="fade-up">
         <img src="https://picsum.photos/600/300?random=1" alt="Chatbot Project">
         <h3>🤖 Chatbot for Genomic Data</h3>
         <p>
-          Developed an intelligent chatbot during my Master’s that integrates with <b>cBioPortal</b>, a widely used cancer genomics platform.  
-          Using <b>Large Language Models (LLMs)</b>, the chatbot simplifies complex genomics queries, allowing researchers and clinicians to explore cancer data in natural language.  
-          This project bridges the gap between AI and healthcare, making cancer research data more accessible and actionable.
+          Built an intelligent chatbot integrated with <b>cBioPortal</b> to simplify
+          genomics data exploration using <b>LLMs</b>. Enables researchers to query
+          mutation data and retrieve results in natural language.
         </p>
       </div>
 
@@ -118,9 +154,8 @@
         <img src="https://picsum.photos/600/300?random=2" alt="Brain Tumor Project">
         <h3>🧠 Brain Tumor Detection</h3>
         <p>
-          Built ML models using <b>SVM</b> and Logistic Regression to classify brain tumor presence from over 5,000 MRI scans.  
-          Achieved <b>95% accuracy</b> with preprocessing, feature extraction, and cross-validation.  
-          Demonstrated ML’s potential in healthcare diagnostics and reliability in decision-making.
+          Developed ML models (SVM & Logistic Regression) to classify brain tumors
+          from MRI scans with <b>95% accuracy</b>. Focused on early healthcare diagnostics.
         </p>
       </div>
 
@@ -128,9 +163,8 @@
         <img src="https://picsum.photos/600/300?random=3" alt="Mental Health Project">
         <h3>💻 Mental Health Analysis</h3>
         <p>
-          Designed a system that integrates <b>OpenAI API</b> with ML models to assess depression severity using survey data and diary entries.  
-          Classified users into different risk categories and recommended personalized support strategies.  
-          Aimed at early detection to promote proactive mental health awareness and care.
+          Built OpenAI-powered ML system to assess depression severity using user entries,
+          classifying users into risk categories for proactive support.
         </p>
       </div>
 
@@ -138,9 +172,8 @@
         <img src="https://picsum.photos/600/300?random=4" alt="Breast Cancer Project">
         <h3>🎗️ Breast Cancer Detection</h3>
         <p>
-          Implemented Logistic Regression to detect breast cancer based on clinical datasets.  
-          Reached <b>90% accuracy</b> with preprocessing, normalization, and validation techniques.  
-          Highlighted the role of predictive analytics in healthcare for early detection.
+          Logistic Regression model for early breast cancer prediction, 
+          achieving <b>90% accuracy</b> with normalized datasets.
         </p>
       </div>
 
@@ -148,34 +181,29 @@
         <img src="https://picsum.photos/600/300?random=5" alt="Stock Analysis Project">
         <h3>📊 Bank Stock Analysis</h3>
         <p>
-          Performed time-series analysis of <b>Bank of America</b> stock data over 5 years using Python (yfinance).  
-          Applied <b>technical indicators</b> and built Matplotlib visualizations to identify market trends and stock volatility.  
-          Delivered insights to support investment strategies.
+          Time-series analysis of <b>Bank of America</b> stock data using yfinance and 
+          technical indicators to identify investment opportunities.
         </p>
       </div>
-
     </div>
   </section>
 
   <!-- Internships -->
   <section class="internships" id="internships" data-aos="fade-left">
     <h2>Internships</h2>
-    
     <div class="intern-card" data-aos="zoom-in">
       <h3>Adani Power | ML Engineer Intern</h3>
       <p>
-        ▪ Developed dashboards and automated reporting systems to optimize workflows.  
-        ▪ Applied the <b>Eclat algorithm</b> on 7,500+ transactions to identify frequently bought product sets, improving product placement strategies.  
-        ▪ Leveraged Python libraries (Pandas, NumPy, Matplotlib) to provide data-driven insights for business decisions.
+        ▪ Developed automated dashboards and applied the <b>Eclat algorithm</b> 
+        to identify product patterns and optimize placements. ▪ Leveraged Pandas, 
+        NumPy, and Matplotlib for real insights.
       </p>
     </div>
-
     <div class="intern-card" data-aos="zoom-in">
       <h3>Tata Steel | Data Analyst Intern</h3>
       <p>
-        ▪ Conducted data analysis on manufacturing datasets to improve production efficiency.  
-        ▪ Built predictive models to forecast equipment maintenance needs.  
-        ▪ Presented actionable insights to optimize supply chain and reduce operational downtime.
+        ▪ Conducted efficiency analysis on manufacturing datasets and developed 
+        predictive models to forecast maintenance needs.
       </p>
     </div>
   </section>
@@ -200,22 +228,19 @@
       <div class="activity-card" data-aos="zoom-in">
         <h3>🍳 Part-Time Chef</h3>
         <p>
-          Currently working as a part-time chef, where I thrive in high-pressure environments and collaborate with a fast-paced team.  
-          This role sharpened my <b>discipline, multitasking, and problem-solving</b> skills — qualities that I bring into my professional and academic work.
+          Working part-time as a chef — learned teamwork, precision, and performance under pressure.
         </p>
       </div>
       <div class="activity-card" data-aos="zoom-in">
         <h3>🎭 Cultural & Team Activities</h3>
         <p>
-          Actively involved in student-led clubs and cultural programs, where I contributed to <b>organizing, coordinating, and performing</b>.  
-          These experiences strengthened my <b>leadership, creativity, and teamwork</b>.
+          Actively participated in student-led events, developing leadership and creativity.
         </p>
       </div>
       <div class="activity-card" data-aos="zoom-in">
         <h3>⚽ Sports & Fitness</h3>
         <p>
-          Passionate about sports such as football and cricket, which taught me <b>resilience, focus, and collaboration</b>.  
-          Regular participation in fitness activities has helped me develop <b>perseverance and a growth mindset</b>, valuable in both academics and work.
+          Passionate about football & cricket — strengthening discipline and resilience.
         </p>
       </div>
     </div>
@@ -240,7 +265,7 @@
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1200, once: true });
+    AOS.init({ duration: 1000, once: true });
 
     // Dark/Light Mode
     const toggleBtn = document.getElementById("theme-toggle");
@@ -256,12 +281,14 @@
       navLinks.classList.toggle("active");
     });
 
-    // Close menu when link clicked
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
+    // Fade-in cards when visible
+    const cards = document.querySelectorAll('.card');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
       });
-    });
+    }, { threshold: 0.2 });
+    cards.forEach(card => observer.observe(card));
   </script>
 </body>
 </html>
