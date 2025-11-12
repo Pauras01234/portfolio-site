@@ -5,16 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pauras Raut | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/aos@2.3.1/dist/aos.css"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <!-- Navbar -->
   <header>
     <nav class="navbar">
@@ -24,24 +19,22 @@
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#internships">Internships</a></li>
         <li><a href="#skills">Skills</a></li>
-        <li><a href="#activities">Activities</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button id="theme-toggle">🌙</button>
     </nav>
   </header>
 
-  <!-- Hero Section with Background Video -->
+  <!-- Hero Section -->
   <section class="hero" id="hero">
     <video autoplay muted loop playsinline id="bg-video">
-      <source src="https://cdn.coverr.co/videos/coverr-clouds-moving-over-the-mountains-1957/1080p.mp4" type="video/mp4" />
+      <source src="https://cdn.coverr.co/videos/coverr-futuristic-data-flow-abstract-technology-9776/1080p.mp4" type="video/mp4" />
     </video>
     <div class="overlay">
-      <h1 data-aos="zoom-in">Hi 👋 I'm <span>Pauras Raut</span></h1>
-      <p data-aos="fade-up">Machine Learning | Data Science | AI</p>
-      <div class="scroll-down" data-aos="fade-up">⬇ Scroll</div>
+      <h1 data-aos="fade-up">Hi, I'm <span>Pauras Raut</span></h1>
+      <p data-aos="fade-up" data-aos-delay="200">Machine Learning | Data Science | AI</p>
+      <a href="#projects" class="btn-primary" data-aos="fade-up" data-aos-delay="400">View My Work</a>
     </div>
   </section>
 
@@ -49,12 +42,10 @@
   <section class="about" id="about" data-aos="fade-right">
     <h2>About Me</h2>
     <p>
-      I am a driven and adaptable professional specializing in Machine Learning, Data Science, and Artificial Intelligence.
-      I have completed my Master’s in Genomic Data Science at the National University of Galway, Ireland.
-    </p>
-    <p>
-      My background combines strong technical skills with practical experience across healthcare, finance, and technology —
-      transforming data into decisions through creativity and analytics.
+      I'm a data-driven problem solver passionate about transforming raw data into actionable intelligence. 
+      With a Master’s in <b>Genomic Data Science</b> from the University of Galway, I specialize in 
+      <b>Machine Learning</b>, <b>AI Systems</b>, and <b>Data Engineering</b>. My work blends analytics, 
+      creativity, and impact — bridging technical depth with practical outcomes.
     </p>
   </section>
 
@@ -62,104 +53,94 @@
   <section class="projects" id="projects">
     <h2 data-aos="fade-up">Projects</h2>
     <div class="grid">
+
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1603277449669-2f4e78f56e9b?auto=format&fit=crop&w=800&q=60" alt="FootballTalks Project" />
+        <img src="https://images.unsplash.com/photo-1603277449669-2f4e78f56e9b?auto=format&fit=crop&w=800&q=80" alt="FootballTalks Project">
         <h3>⚽ FootballTalks – AI Score Predictor</h3>
         <p>
-          AI-driven football score predictor using <b>climate data</b> and <b>past performance</b>
-          to forecast outcomes with Python-based machine learning.
+          Predicts football match outcomes using <b>climate</b> and <b>past match data</b> via Python-based 
+          ML algorithms. Delivers real-time insights using structured APIs.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="TravelPia Project" />
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="TravelPia Project">
         <h3>🧭 TravelPia – AI Travel Assistant</h3>
         <p>
-          RAG-powered travel planner for Ireland using <b>LangChain</b> and <b>GPT4All</b>.
-          Generates itineraries, travel insights, and top spots instantly.
+          RAG-based travel companion generating smart itineraries for every county in Ireland. 
+          Uses <b>LangChain</b>, <b>GPT4All</b>, and <b>Vector Databases</b> to deliver personalized recommendations.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1665686309853-4a3f8cf86a32?auto=format&fit=crop&w=800&q=60" alt="Instructify Project" />
+        <img src="https://images.unsplash.com/photo-1665686309853-4a3f8cf86a32?auto=format&fit=crop&w=800&q=80" alt="Instructify Project">
         <h3>🤖 Instructify – HR Automation Chatbot</h3>
         <p>
-          Automates <b>HR and EHS</b> queries for employees using AI-driven conversational logic.
-          Reduces workload and increases efficiency across organizations.
+          Automates <b>HR and EHS</b> operations through AI chat pipelines. 
+          Designed to handle employee queries and policy FAQs with contextual NLP.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1581093448798-5d31cb9a4f85?auto=format&fit=crop&w=800&q=60" alt="cBioPortal Project" />
+        <img src="https://images.unsplash.com/photo-1581093448798-5d31cb9a4f85?auto=format&fit=crop&w=800&q=80" alt="cBioPortal Project">
         <h3>🧬 cBioPortal LLM Chatbot</h3>
         <p>
-          Integrated with <b>cBioPortal</b> for cancer mutation datasets.
-          Simplifies complex genomic data queries using <b>LLMs</b>.
+          Large Language Model integrated with <b>cBioPortal</b> for exploring LUAD mutation data. 
+          Bridges genomic datasets with conversational AI for accessible research.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=60" alt="Customer Churn Project" />
+        <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Customer Churn Project">
         <h3>📊 Customer Churn Prediction</h3>
         <p>
-          Predicts customer churn with <b>data preprocessing</b>, <b>feature selection</b>,
-          and ML visualization using Streamlit dashboards.
+          Interactive <b>Streamlit dashboard</b> for visualizing churn probability. 
+          Combines preprocessing, model training, and performance visualization.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1635776064969-8d2d7f96ff4c?auto=format&fit=crop&w=800&q=60" alt="Breast Cancer Project" />
+        <img src="https://images.unsplash.com/photo-1635776064969-8d2d7f96ff4c?auto=format&fit=crop&w=800&q=80" alt="Breast Cancer Project">
         <h3>🎗️ Breast Cancer Detection</h3>
         <p>
-          Logistic regression model achieving 90%+ accuracy in cancer detection
-          through rigorous preprocessing and validation.
+          Predictive ML model using logistic regression to classify cancer stages with 
+          >90% accuracy. Applied normalization and cross-validation.
         </p>
       </div>
 
       <div class="card" data-aos="fade-up">
-        <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=800&q=60" alt="Heart Disease Project" />
+        <img src="https://images.unsplash.com/photo-1582719471137-c3967ffb1c2d?auto=format&fit=crop&w=800&q=80" alt="Heart Disease Project">
         <h3>❤️ Heart Disease Prediction</h3>
         <p>
-          Predictive model using logistic regression on clinical datasets
-          to assist in proactive healthcare diagnosis.
+          Predicts heart disease risk using <b>logistic regression</b> on clinical datasets. 
+          Helps enable early detection through data-driven insights.
         </p>
       </div>
+
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="footer" data-aos="fade-up">
     <div class="footer-content">
-      <p>Made with ❤️ by <span>Pauras Raut</span></p>
-      <div class="footer-icons">
-        <a href="https://github.com/Pauras01234" target="_blank" rel="noopener noreferrer">🐙 GitHub</a>
-        <a href="mailto:rautpauras000@gmail.com">📧 Email</a>
-        <a href="https://www.linkedin.com/in/pauras-raut-369a511aa/" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+      <p>© 2025 <b>Pauras Raut</b> — Exploring AI, Data & Design</p>
+      <div class="footer-links">
+        <a href="https://github.com/Pauras01234" target="_blank">GitHub</a>
+        <a href="mailto:rautpauras000@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/pauras-raut-369a511aa/" target="_blank">LinkedIn</a>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 Pauras Raut | Exploring AI, Data & Imagination 🌌</p>
     </div>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init({ duration: 1200, once: true });
-    const toggleBtn = document.getElementById("theme-toggle");
-    toggleBtn.addEventListener("click", () => {
+    AOS.init({ duration: 1000, once: true });
+    document.getElementById("theme-toggle").addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
-      toggleBtn.textContent = document.body.classList.contains("dark-mode")
-        ? "☀️"
-        : "🌙";
     });
-    const hamburger = document.getElementById("hamburger");
-    const navLinks = document.getElementById("nav-links");
-    hamburger.addEventListener("click", () =>
-      navLinks.classList.toggle("active")
-    );
-    document.querySelectorAll(".nav-links a").forEach((link) =>
-      link.addEventListener("click", () => navLinks.classList.remove("active"))
-    );
+    document.getElementById("hamburger").addEventListener("click", () => {
+      document.getElementById("nav-links").classList.toggle("active");
+    });
   </script>
 </body>
 </html>
