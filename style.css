@@ -1,97 +1,43 @@
-/* Hero Video */
-.hero {
-  height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  overflow: hidden;
-}
-#bg-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  filter: brightness(55%);
-}
-.overlay {
-  text-align: center;
-  padding: 20px;
-  backdrop-filter: blur(4px);
-}
-.btn-primary {
-  background: linear-gradient(90deg, #f1c40f, #e67e22);
-  color: white;
-  padding: 12px 28px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: 600;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-/* Projects Grid */
-.projects .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 28px;
-  padding: 40px 0;
-}
-.card {
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex;
-  flex-direction: column;
-}
+/* Ensure custom images look clean */
 .card img {
   width: 100%;
-  height: 190px;
+  height: 180px;
   object-fit: cover;
 }
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+/* Footer with resume button at the very end */
+.site-footer {
+  margin-top: 40px;
+  padding: 22px 16px;
+  background: #0f1115;
+  color: #bbb;
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
-.card h3 {
-  margin: 16px;
-  color: #2c3e50;
+.site-footer .footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.card p {
-  margin: 0 16px 20px;
-  color: #444;
-  line-height: 1.5;
+.resume-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: linear-gradient(45deg, #f1c40f, #e67e22);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
-/* Footer */
-.footer {
-  background: #111;
-  color: #ccc;
-  text-align: center;
-  padding: 25px 10px;
-  margin-top: 60px;
-  border-top: 1px solid rgba(255,255,255,0.1);
-}
-.footer-links a {
-  margin: 0 12px;
-  color: #f1c40f;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
-}
-.footer-links a:hover {
-  color: #e67e22;
-}
-.footer p {
-  font-size: 0.95rem;
-  margin-bottom: 10px;
+/* Dark mode footer tweak */
+body.dark-mode .site-footer {
+  background: #111316;
+  color: #ddd;
+  border-top-color: rgba(255,255,255,0.1);
 }
