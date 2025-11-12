@@ -7,23 +7,47 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet" />
+
   <style>
-    /* ✨ Extra fade animation for project cards */
+    /* ✨ Fade animation for project cards */
     .card {
       opacity: 0;
       transform: translateY(40px);
       transition: all 0.6s ease;
     }
+
     .card.visible {
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Default hover for all cards */
     .card:hover {
       transform: translateY(-10px) scale(1.03);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     }
+
+    /* 🌟 Neon hover for TravelPia and FootballTalks */
+    .card.glow:hover {
+      box-shadow:
+        0 0 10px rgba(241, 196, 15, 0.7),
+        0 0 25px rgba(230, 126, 34, 0.6),
+        0 0 40px rgba(241, 196, 15, 0.4);
+      transform: translateY(-12px) scale(1.05);
+      transition: all 0.4s ease-in-out;
+    }
+
+    /* Smooth image fade on hover */
+    .card img {
+      transition: opacity 0.4s ease;
+    }
+
+    .card.glow:hover img {
+      opacity: 0.85;
+    }
   </style>
 </head>
+
 <body>
   <!-- Navbar -->
   <header>
@@ -57,8 +81,8 @@
     <h2>About Me</h2>
     <p>
       I am a driven and adaptable professional specializing in Machine Learning,
-      Data Science, and Artificial Intelligence. I have completed my Master’s
-      in Genomic Data Science at the National University of Galway, Ireland,
+      Data Science, and Artificial Intelligence. I completed my Master’s in
+      Genomic Data Science at the National University of Galway, Ireland,
       where I developed expertise in advanced analytics, statistical modeling,
       and AI-driven problem solving.
     </p>
@@ -74,7 +98,6 @@
   <section class="education" id="education" data-aos="fade-up">
     <h2>Education</h2>
     <div class="timeline">
-
       <div class="timeline-item" data-aos="fade-right">
         <div class="timeline-content">
           <h3>🎓 Master’s in Genomic Data Science</h3>
@@ -116,37 +139,36 @@
     <div class="grid">
 
       <!-- FootballTalks -->
-      <div class="card" data-aos="fade-up">
+      <div class="card glow" data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=800&q=60" alt="FootballTalks Project">
         <h3>⚽ FootballTalks – AI Score Predictor</h3>
         <p>
           AI-based football analytics platform that predicts match outcomes using
           <b>climate data</b> and <b>past performance records</b>. Built with Python
-          and integrated APIs for real-time weather and stats. 
-          Designed to showcase AI’s role in sports forecasting.
+          and integrated APIs for real-time weather and stats, showcasing AI’s
+          role in sports forecasting.
         </p>
       </div>
 
       <!-- TravelPia -->
-      <div class="card" data-aos="fade-up">
+      <div class="card glow" data-aos="fade-up">
         <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=60" alt="TravelPia Project">
         <h3>🧭 TravelPia – AI Travel Assistant</h3>
         <p>
           Smart AI travel planner that uses <b>Retrieval-Augmented Generation (RAG)</b>
-          to generate travel guides for every county in Ireland. 
+          to generate travel guides for every county in Ireland.
           Integrated with LangChain, GPT4All, and vector databases 
           to deliver personalized itineraries and insights.
         </p>
       </div>
 
-      <!-- Original 5 -->
+      <!-- Original Projects -->
       <div class="card" data-aos="fade-up">
         <img src="https://picsum.photos/600/300?random=1" alt="Chatbot Project">
         <h3>🤖 Chatbot for Genomic Data</h3>
         <p>
           Built an intelligent chatbot integrated with <b>cBioPortal</b> to simplify
-          genomics data exploration using <b>LLMs</b>. Enables researchers to query
-          mutation data and retrieve results in natural language.
+          genomics data exploration using <b>LLMs</b>.
         </p>
       </div>
 
@@ -155,7 +177,7 @@
         <h3>🧠 Brain Tumor Detection</h3>
         <p>
           Developed ML models (SVM & Logistic Regression) to classify brain tumors
-          from MRI scans with <b>95% accuracy</b>. Focused on early healthcare diagnostics.
+          from MRI scans with <b>95% accuracy</b>.
         </p>
       </div>
 
@@ -164,7 +186,7 @@
         <h3>💻 Mental Health Analysis</h3>
         <p>
           Built OpenAI-powered ML system to assess depression severity using user entries,
-          classifying users into risk categories for proactive support.
+          classifying users into risk categories.
         </p>
       </div>
 
@@ -195,8 +217,7 @@
       <h3>Adani Power | ML Engineer Intern</h3>
       <p>
         ▪ Developed automated dashboards and applied the <b>Eclat algorithm</b> 
-        to identify product patterns and optimize placements. ▪ Leveraged Pandas, 
-        NumPy, and Matplotlib for real insights.
+        to identify product patterns and optimize placements.
       </p>
     </div>
     <div class="intern-card" data-aos="zoom-in">
@@ -227,21 +248,15 @@
     <div class="activities-grid">
       <div class="activity-card" data-aos="zoom-in">
         <h3>🍳 Part-Time Chef</h3>
-        <p>
-          Working part-time as a chef — learned teamwork, precision, and performance under pressure.
-        </p>
+        <p>Working part-time as a chef — learned teamwork, precision, and focus.</p>
       </div>
       <div class="activity-card" data-aos="zoom-in">
         <h3>🎭 Cultural & Team Activities</h3>
-        <p>
-          Actively participated in student-led events, developing leadership and creativity.
-        </p>
+        <p>Actively participated in events, building leadership and creativity.</p>
       </div>
       <div class="activity-card" data-aos="zoom-in">
         <h3>⚽ Sports & Fitness</h3>
-        <p>
-          Passionate about football & cricket — strengthening discipline and resilience.
-        </p>
+        <p>Passionate about football & cricket — strengthening discipline and resilience.</p>
       </div>
     </div>
   </section>
@@ -281,11 +296,11 @@
       navLinks.classList.toggle("active");
     });
 
-    // Fade-in cards when visible
-    const cards = document.querySelectorAll('.card');
+    // Fade-in effect when visible
+    const cards = document.querySelectorAll(".card");
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
+        if (entry.isIntersecting) entry.target.classList.add("visible");
       });
     }, { threshold: 0.2 });
     cards.forEach(card => observer.observe(card));
