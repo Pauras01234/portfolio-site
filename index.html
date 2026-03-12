@@ -9,7 +9,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Orbitron:wght@600&display=swap" rel="stylesheet" />
 
   <style>
-    /* ✨ Fade animation for project cards*/
     .card {
       opacity: 0;
       transform: translateY(40px);
@@ -21,13 +20,11 @@
       transform: translateY(0);
     }
 
-    /* Default hover for all cards */
     .card:hover {
       transform: translateY(-10px) scale(1.03);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     }
 
-    /* 🌟 Neon hover for TravelPia and FootballTalks */
     .card.glow:hover {
       box-shadow:
         0 0 10px rgba(241, 196, 15, 0.7),
@@ -37,12 +34,13 @@
       transition: all 0.4s ease-in-out;
     }
 
-    /* Smooth image fade on hover */
-    .card img {
+    .card img,
+    .project-video {
       transition: opacity 0.4s ease;
     }
 
-    .card.glow:hover img {
+    .card.glow:hover img,
+    .card.glow:hover .project-video {
       opacity: 0.85;
     }
   </style>
@@ -157,12 +155,38 @@
         <p>
           Smart AI travel planner that uses <b>Retrieval-Augmented Generation (RAG)</b>
           to generate travel guides for every county in Ireland.
-          Integrated with LangChain, GPT4All, and vector databases 
+          Integrated with LangChain, GPT4All, and vector databases
           to deliver personalized itineraries and insights.
         </p>
       </div>
 
-      <!-- Original Projects -->
+      <!-- AI Video Colorization Pipeline -->
+      <div class="card glow" data-aos="fade-up">
+        <video controls poster="difference.png" class="project-video">
+          <source src="linkedin_compressed.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>🎨 AI Video Colorization Pipeline</h3>
+        <p>
+          Developed an AI-based video colorization pipeline using <b>DeOldify</b>,
+          <b>PyTorch</b>, <b>FFmpeg</b>, and <b>Google Colab</b> to convert
+          black-and-white video into color.
+        </p>
+        <p>
+          Started by understanding how a video can be broken into frames and
+          stitched back together. Then integrated a pretrained DeOldify model
+          to process the input video and generate the final colorized output.
+        </p>
+        <p>
+          Solved challenges related to GPU access, environment setup, and
+          compatibility between older DeOldify code and newer PyTorch behavior.
+        </p>
+        <p class="project-links">
+          <a href="https://github.com/Pauras01234/video-colorization-pipeline" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+      </div>
+
+      <!-- Chatbot -->
       <div class="card glow" data-aos="fade-up">
         <img src="https://picsum.photos/600/300?random=1" alt="Chatbot Project">
         <h3>🤖 Chatbot for Genomic Data</h3>
@@ -172,6 +196,7 @@
         </p>
       </div>
 
+      <!-- Brain Tumor -->
       <div class="card glow" data-aos="fade-up">
         <img src="https://picsum.photos/600/300?random=2" alt="Brain Tumor Project">
         <h3>🧠 Brain Tumor Detection</h3>
@@ -181,6 +206,7 @@
         </p>
       </div>
 
+      <!-- Mental Health -->
       <div class="card glow" data-aos="fade-up">
         <img src="https://picsum.photos/600/300?random=3" alt="Mental Health Project">
         <h3>💻 Mental Health Analysis</h3>
@@ -190,20 +216,22 @@
         </p>
       </div>
 
+      <!-- Breast Cancer -->
       <div class="card glow" data-aos="fade-up">
         <img src="https://picsum.photos/600/300?random=4" alt="Breast Cancer Project">
         <h3>🎗️ Breast Cancer Detection</h3>
         <p>
-          Logistic Regression model for early breast cancer prediction, 
+          Logistic Regression model for early breast cancer prediction,
           achieving <b>90% accuracy</b> with normalized datasets.
         </p>
       </div>
 
+      <!-- Stock Analysis -->
       <div class="card glow" data-aos="fade-up">
         <img src="https://picsum.photos/600/300?random=5" alt="Stock Analysis Project">
         <h3>📊 Bank Stock Analysis</h3>
         <p>
-          Time-series analysis of <b>Bank of America</b> stock data using yfinance and 
+          Time-series analysis of <b>Bank of America</b> stock data using yfinance and
           technical indicators to identify investment opportunities.
         </p>
       </div>
@@ -235,25 +263,24 @@
     <div class="intern-card" data-aos="zoom-in">
       <h3>Adani Power | ML Engineer Intern</h3>
       <p>
-        ▪ Developed automated dashboards and applied the <b>Eclat algorithm</b> 
+        ▪ Developed automated dashboards and applied the <b>Eclat algorithm</b>
         to identify product patterns and optimize placements.
       </p>
     </div>
     <div class="intern-card" data-aos="zoom-in">
       <h3>Tata Steel | Data Analyst Intern</h3>
       <p>
-        ▪ Conducted efficiency analysis on manufacturing datasets and developed 
+        ▪ Conducted efficiency analysis on manufacturing datasets and developed
         predictive models to forecast maintenance needs.
       </p>
     </div>
   </section>
 
-  <!-- Skills (UPDATED: Data Analyst focus; NO VS Code, NO PostgreSQL, NO Jupyter) -->
+  <!-- Skills -->
   <section class="skills" id="skills">
     <h2 data-aos="fade-up">Skills</h2>
 
     <div class="skills-grid">
-      <!-- Core -->
       <div>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
         <p>Python</p>
@@ -266,20 +293,14 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"/>
         <p>NumPy</p>
       </div>
-
-      <!-- SQL -->
       <div>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"/>
         <p>SQL</p>
       </div>
-
-      <!-- Visualization -->
       <div>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matplotlib/matplotlib-original.svg" alt="Matplotlib"/>
         <p>Matplotlib</p>
       </div>
-
-      <!-- Version Control -->
       <div>
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
         <p>Git</p>
@@ -288,14 +309,10 @@
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
         <p>GitHub</p>
       </div>
-
-      <!-- Streamlit -->
       <div>
         <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
         <p>Streamlit</p>
       </div>
-
-      <!-- Excel + Power BI (badges are reliable) -->
       <div>
         <img src="https://img.shields.io/badge/Microsoft%20Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" alt="Excel"/>
         <p>Excel (Pivot, XLOOKUP)</p>
@@ -360,21 +377,18 @@
   <script>
     AOS.init({ duration: 1000, once: true });
 
-    // Dark/Light Mode
     const toggleBtn = document.getElementById("theme-toggle");
     toggleBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
       toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
     });
 
-    // Hamburger
     const hamburger = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
     hamburger.addEventListener("click", () => {
       navLinks.classList.toggle("active");
     });
 
-    // Fade-in effect when visible
     const cards = document.querySelectorAll(".card");
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
@@ -385,4 +399,3 @@
   </script>
 </body>
 </html>
-
